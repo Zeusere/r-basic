@@ -1,0 +1,70 @@
+---
+title: "Prova 2"
+author: "Pbuisan"
+date: "30/11/2020"
+output:
+  pdf_document: default
+  word_document: default
+---
+$$x+3$$
+$\spadesuit$
+$$\alpha$$
+$$\begin{pmatrix}a_{11}&a_{12}& a_{13}\\a_{21}&a_{22}&a_{23}\end{pmatrix}$$
+$$\begin{vmatrix}a_{11}&a_{12}& a_{13}\\a_{21}&a_{22}&a_{23}\end{vmatrix}$$
+#mi primera chunk
+
+```{r miprimachunk, echo=FALSE}
+sqrt(2)-exp(2)
+```
+
+#mi segunda chunk con message de que se está haciendo y borrando los # con comment
+
+```{r segundachunk, message=TRUE, comment= NA}
+library(magic)
+magic(6)
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Cuando queremos hacer la raiz cuadrado de 2 podemos hacerlo:
+
+- En $\LaTeX: $\sqrt{2}$
+- En `R` haciendo `r sqrt(2)`
+- La frase completa $\sqrt{2}=$ `r sqrt(2)`
+
+
+El número $\pi$ empieza por `r pi`
+
+```{r prueba, results="hide", echo =FALSE}
+notas= c(3,5,7,7,9,10)
+media=mean(notas)
+n= length(notas)
+desv.tip=sd(notas)
+```
+
+Este año he hecho $n=$ `r n` examenes, con una media $\overline{x}=$ `r media` y una desviación típica $s=$ `r desv.tip`. 
+
+# con round (media,2) y round(desv.tip, 2)mostraríamos solo 2 decimales
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

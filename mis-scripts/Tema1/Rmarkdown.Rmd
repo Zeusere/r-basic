@@ -1,0 +1,44 @@
+---
+title: "Rmarkdown"
+author: "Pbuisan"
+date: "28/11/2020"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+$$x+3$$
+$\spadesuit$
+$$\alpha$$
+$\dfrac{a}{b}$
+#Matriz con paréntesis
+$$\begin{pmatrix}a_{11}&a_{12}& a_{13}\\a_{21}&a_{22}&a_{23}\end{pmatrix}$$
+#Matriz con barras
+$$\begin{vmatrix}a_{11}&a_{12}& a_{13}\\a_{21}&a_{22}&a_{23}\end{vmatrix}$$
+$$|x|=\left\{\begin{array}{l} -x & \text{si }x\le 0\\ x & \text{si }x\ge 0 \end{array}\right.$$
+# Nuestras propias CHUNKS
+
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+ the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

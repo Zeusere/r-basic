@@ -1,0 +1,25 @@
+---
+title: "Vectores"
+author: "Pol Buisan"
+date: "2/12/2020"
+output: html_document
+---
+
+```{r}
+c(1,2,3,4)
+```
+
+```{r}
+rep("Mates",4)
+```
+
+```{r}
+rep("1990",10)
+```
+
+```{r}
+vec<-c(16,0,1,20,1,7,88,5,1,9)
+fix(vec)
+vec
+```
+

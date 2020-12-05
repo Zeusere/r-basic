@@ -1,0 +1,34 @@
+---
+title: "Markdown de Texto"
+author: "Pbuisan"
+date: "30/11/2020"
+output: pdf_document
+---
+
+# Título 1
+
+## Título 2
+
+### Título 3
+
+Esto es un texto llano. Podemos escribir sin ningún problema todo el texto que queramos para acompañar a el código en `R`
+como en las fórmulas en \LaTeX
+
+Esto sería una nueva línea de texto. Dos intros, sino no habrá salto de línea.
+
+Para colocar *cursiva* usamos asterisco.
+Para colocar **negrita** usamos doble asterisco. 
+
+Los superíndices van con el sombrerito: Pol Buisan ^Aprendiendo^
+
+Para conocer más sobre los cursos, podemos visitar el perfil de [Udemy](https://udemy.com)
+
+
+
+1.Item Primero
+
+2.Item Segundo
+    + Sub Item 2.1
+    + Sub Item 2.2
+    
+
